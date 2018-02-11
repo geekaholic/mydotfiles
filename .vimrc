@@ -12,6 +12,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Nerdtree plugin map to ctrl n
 map <C-n> :NERDTreeToggle<CR>
