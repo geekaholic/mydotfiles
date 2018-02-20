@@ -1,3 +1,6 @@
+" Turn off annoying bell
+set belloff=all
+
 " Vundle stuff
 set nocompatible              " be iMproved, required
 filetype off                  " required
