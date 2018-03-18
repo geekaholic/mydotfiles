@@ -5,13 +5,22 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
+# GO setup
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin:$HOME/bin"
 
+# Open file using VIM in a new tab (replace gvim with mvim on OSX)
 alias mvi='gvim --servername VIM --remote-tab-silent'
+
+# Best cmdline task mgr [ii.do](https://github.com/geekaholic/ii.do)
 alias t='~/bin/ii.do'
 alias bookmarks='~/bin/ii.do -f ~/bookmarks.markdown'
-alias naughty='history -c && history -w'
+
+# wipeout history
+alias wipeout='history -c && history -w'
+
+# Mac OSX like open for Linux
+alias open='xdg-open $1 2>/dev/null'
 
 #source /usr/etc/bash_completion.d/git-extras
 source ~/.git-prompt.sh
