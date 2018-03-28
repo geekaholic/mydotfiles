@@ -24,7 +24,7 @@ alias open='xdg-open $1 2>/dev/null'
 
 # Docker aliases
 # Remove dangling images
-alias docker-clean-images='docker images purge'
+alias docker-clean-images='docker image prune'
 alias docker-clean-containers='docker rm $(docker ps -a -f status=exited -q)'
 
 #source /usr/etc/bash_completion.d/git-extras
