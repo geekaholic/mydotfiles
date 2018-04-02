@@ -9,6 +9,10 @@ export HISTFILESIZE=2000
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin:$HOME/bin"
 
+# JAVA (OpenJDK)
+# Can get via `java -XshowSettings:properties -version`
+export  JAVA_HOME=/usr/lib64/openjdk-8/jre
+
 # Open file using VIM in a new tab (replace gvim with mvim on OSX)
 alias mvi='gvim --servername VIM --remote-tab-silent'
 
