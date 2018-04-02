@@ -1,0 +1,16 @@
+# These are the packages I pretty much need to have on a Linux/OSX system.
+# I wrote a tool called [InstallBuddy](https://github.com/geekaholic/install-buddy) which automates the installation of these packages.
+
+packages:
+  - docker:
+    - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
+  - docker-compose
+  - git
+  - htop
+  - inxi
+  - powerline
+  - powertop
+  - pwgen
+  - the_silver_searcher:
+    - alias: { Debian: "silversearcher-ag", Ubuntu: "silversearcher-ag",  Solus: "silver-searcher"}
+  - vim
