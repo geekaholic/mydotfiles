@@ -25,6 +25,7 @@ alias wipeout='history -c && history -w'
 
 # Mac OSX like open for Linux
 alias open='xdg-open $1 2>/dev/null'
+alias pbcopy="xclip -sel clip"
 
 # Docker aliases
 # Remove dangling images
