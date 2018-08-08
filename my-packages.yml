@@ -18,3 +18,5 @@ packages:
   - the_silver_searcher:
     - alias: { Debian: "silversearcher-ag", Ubuntu: "silversearcher-ag",  Solus: "silver-searcher"}
   - vim
+  - xclip:
+    - skip: [ MacOSX ]
