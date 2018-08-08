@@ -2,12 +2,16 @@
 # I wrote a tool called [InstallBuddy](https://github.com/geekaholic/install-buddy) which automates the installation of these packages.
 
 packages:
+  - bash-completion
   - docker:
     - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
+    - skip: [ "MacOSX" ]
   - docker-compose
   - git
   - htop
   - inxi
+  - macvim:
+    - skip: [ "Linux" ]
   - powerline
   - powertop
   - pwgen
