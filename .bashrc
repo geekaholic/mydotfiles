@@ -13,6 +13,9 @@ export PATH="$PATH:$GOPATH/bin:$HOME/bin"
 # Can get via `java -XshowSettings:properties -version`
 export  JAVA_HOME=/usr/lib64/openjdk-8/jre
 
+# Colorful
+alias ls='ls --color'
+
 # Open file using VIM in a new tab (replace gvim with mvim on OSX)
 alias mvi='gvim --servername VIM --remote-tab-silent'
 
