@@ -15,7 +15,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h12
+
+" Uncomment for powerline. make sure Font is installed
+"set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h12
+"set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
 
 " Nerdtree plugin map to ctrl n
 map <C-n> :NERDTreeToggle<CR>

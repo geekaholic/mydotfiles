@@ -12,6 +12,9 @@ packages:
   - inxi
   - macvim:
     - skip: [ "Linux" ]
+  - gvim:
+    - skip: [ "MacOSX" ]
+    - alias: { Ubuntu: 'vim-gtk' }
   - powerline
   - powertop
   - pwgen
@@ -19,4 +22,6 @@ packages:
     - alias: { Debian: "silversearcher-ag", Ubuntu: "silversearcher-ag",  Solus: "silver-searcher"}
   - vim
   - xclip:
-    - skip: [ MacOSX ]
+    - skip: [ "MacOSX" ]
+  - tlp-rdw:
+    - skip: [ "MacOSX" ]
