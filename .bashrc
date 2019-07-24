@@ -5,6 +5,10 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
+# Less syntax highlight
+export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force --style neon"
+export LESS=" -R"
+
 # GO setup
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin:$HOME/bin"
