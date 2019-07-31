@@ -1,4 +1,4 @@
-source /usr/share/defaults/etc/profile
+# Source this file from your ~/.bashrc
 export EDITOR="vim"
 
 export HISTCONTROL=ignoreboth
@@ -32,7 +32,8 @@ alias wipeout='history -c && history -w'
 
 # Mac OSX like open for Linux
 alias open='xdg-open $1 2>/dev/null'
-alias pbcopy="xclip -sel clip"
+alias pbcopy='xclip -sel clip'
+alias pbpaste='xclip -sel clip -o'
 
 # Docker aliases
 # Remove dangling images
