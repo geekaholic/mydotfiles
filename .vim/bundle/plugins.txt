@@ -1,0 +1,16 @@
+ag
+url = https://github.com/rking/ag.vim
+nerdtree
+url = https://github.com/scrooloose/nerdtree.git
+vim-airline
+url = https://github.com/vim-airline/vim-airline.git
+vim-airline-themes
+url = https://github.com/vim-airline/vim-airline-themes.git
+vim-bookmarks
+url = https://github.com/MattesGroeger/vim-bookmarks.git
+vim-go
+url = https://github.com/fatih/vim-go.git
+vim-terraform
+url = https://github.com/hashivim/vim-terraform.git
+Vundle.vim
+url = https://github.com/VundleVim/Vundle.vim.git
