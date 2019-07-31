@@ -14,17 +14,23 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Powerline alternative plugin
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
 
 " Uncomment for powerline. make sure Font is installed
 "set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h12
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
+" Use below font with gvim
+set guifont=Source\ Code\ Pro\ Medium\ 11
 
 " Nerdtree plugin map to ctrl n
 map <C-n> :NERDTreeToggle<CR>
 
 " Enable ag plugin for searching
-let g:agprg="/usr/local/bin/ag --column"
+let g:ag_prg="env ag --vimgrep"
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
