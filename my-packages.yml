@@ -11,6 +11,8 @@ packages:
   - git
   - htop
   - inxi
+  - terminology
+    - skip: ["MacOSX"]
   - macvim:
     - skip: [ "Linux" ]
   - gvim:
