@@ -4,6 +4,7 @@
 packages:
   - bash-completion
   - highlight
+  - jq
   - docker:
     - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
     - skip: [ "MacOSX" ]
