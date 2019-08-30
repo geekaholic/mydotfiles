@@ -23,6 +23,7 @@ let g:airline_powerline_fonts = 1
 " Uncomment for powerline. make sure Font is installed
 "set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h12
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
+" Use set guifont? to check current font
 " Use below font with gvim
 set guifont=Source\ Code\ Pro\ Medium\ 11
 
