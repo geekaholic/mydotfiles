@@ -18,7 +18,7 @@ packages:
     - skip: [ "Linux" ]
   - gvim:
     - skip: [ "MacOSX" ]
-    - alias: { Ubuntu: 'vim-gtk' }
+    - alias: { Ubuntu: 'vim-gtk3' }
   - powerline
   - powertop
   - pwgen
