@@ -85,6 +85,9 @@ set foldlevelstart=20
 match ErrorMsg '\s\+$'
 set colorcolumn=80
 
+" Map clipboard to yank
+set clipboard+=unnamedplus
+
 setlocal omnifunc=syntaxcomplete#Complete
 
 filetype plugin on
