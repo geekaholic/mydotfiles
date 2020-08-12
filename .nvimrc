@@ -27,8 +27,10 @@ set ignorecase
 set smartcase
 
 " Bind tab switch keys
-map <C-Left> <Esc>:tabprev<CR>
-map <C-Right> <Esc>:tabnext<CR>
+noremap <c-left> <esc>:tabprev<cr>
+noremap <c-right> <esc>:tabnext<cr>
+noremap <c-s-left> <esc>:tabmove -1<cr>
+noremap <c-s-right> <esc>:tabmove +1<cr>
 
 set background=dark
 
