@@ -20,6 +20,10 @@ packages:
   - gvim:
     - skip: [ "MacOSX" ]
     - alias: { Ubuntu: 'vim-gtk3' }
+  - neovim-qt:
+    - only: [ "Manjaro" ]
+  - python-pip:
+    - only: [ "Manjaro" ]
   - powerline
   - powertop
   - pwgen
