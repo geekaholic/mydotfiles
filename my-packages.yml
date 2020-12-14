@@ -12,14 +12,21 @@ packages:
   - docker-compose
   - git
   - htop
-  - inxi
-  - terminology:
-    - skip: [ "MacOSX" ]
+  - tree:
+    - skip: [ "Linux" ]
   - macvim:
     - skip: [ "Linux" ]
+  - inxi
+    - skip: [ "MacOSX" ]
+  - terminology:
+    - skip: [ "MacOSX" ]
   - gvim:
     - skip: [ "MacOSX" ]
     - alias: { Ubuntu: 'vim-gtk3' }
+  - xclip:
+    - skip: [ "MacOSX" ]
+  - tlp-rdw:
+    - skip: [ "MacOSX" ]
   - neovim-qt:
     - only: [ "Manjaro" ]
   - python-pip:
@@ -31,7 +38,3 @@ packages:
     - alias: { Debian: "silversearcher-ag", Ubuntu: "silversearcher-ag",  Solus: "silver-searcher"}
   - vim
   - tilix
-  - xclip:
-    - skip: [ "MacOSX" ]
-  - tlp-rdw:
-    - skip: [ "MacOSX" ]
