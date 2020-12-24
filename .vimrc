@@ -15,6 +15,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Terraform
+let g:terraform_fmt_on_save=1
+
 " Powerline alternative plugin
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -88,7 +91,11 @@ match ErrorMsg '\s\+$'
 set colorcolumn=80
 
 " Map clipboard to yank
-set clipboard+=unnamedplus
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 setlocal omnifunc=syntaxcomplete#Complete
 
