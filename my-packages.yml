@@ -16,7 +16,7 @@ packages:
     - skip: [ "Linux" ]
   - macvim:
     - skip: [ "Linux" ]
-  - inxi
+  - inxi:
     - skip: [ "MacOSX" ]
   - terminology:
     - skip: [ "MacOSX" ]
