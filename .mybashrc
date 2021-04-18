@@ -39,6 +39,7 @@ alias pbpaste='xclip -sel clip -o'
 # Remove dangling images
 alias docker-clean-images='docker image prune'
 alias docker-clean-containers='docker rm $(docker ps -a -f status=exited -q)'
+alias docker-clean-system='docker system prune'
 
 #source /usr/etc/bash_completion.d/git-extras
 source ~/.git-prompt.sh
