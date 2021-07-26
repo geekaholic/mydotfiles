@@ -30,6 +30,9 @@ let g:airline_powerline_fonts = 1
 " Use below font with gvim
 set guifont=Source\ Code\ Pro\ Medium\ 11
 
+" Mouse support
+:set mouse=a
+
 " Nerdtree plugin map to ctrl n
 map <C-n> :NERDTreeToggle<CR>
 
@@ -106,11 +109,20 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd Filetype ruby,scss,haml,html,css,yml setlocal ts=2 sts=2 sw=2 expandtab
+
+" yaml related
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Install plugin https://github.com/Yggdroot/indentLine
+let g:indentLine_char = '⦙'
+" Install yamllint cmd tool and https://github.com/dense-analysis/ale
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
 
 " xml formatting
 function! DoPrettyXML()
