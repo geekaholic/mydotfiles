@@ -2,6 +2,8 @@
 # I wrote a tool called [InstallBuddy](https://github.com/geekaholic/install-buddy) which automates the installation of these packages.
 
 packages:
+  - brew:
+    - shell: [ "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"" ]
   - bash-completion
   - highlight
   - jq
@@ -33,6 +35,7 @@ packages:
   - python-pip:
     - only: [ "Manjaro" ]
   - powerline
+    - alias: { Ubuntu: "fonts-powerline", Fedora: "powerline-fonts" }
   - powertop
   - pwgen
   - the_silver_searcher:
