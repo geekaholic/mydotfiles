@@ -13,6 +13,8 @@ packages:
     - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
     - skip: [ "MacOSX" ]
   - docker-compose
+  - kubectx:
+    - only: [ "Ubuntu", "MacOSX" ]
   - git
   - htop
   - tree:
