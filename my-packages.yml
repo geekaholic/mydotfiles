@@ -9,6 +9,8 @@ packages:
   - jq
   - yamllint
   - screenfetch
+  - tmux
+  - curl
   - docker:
     - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
     - skip: [ "MacOSX" ]
