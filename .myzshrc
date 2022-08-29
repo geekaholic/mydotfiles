@@ -1,0 +1,74 @@
+# Source this file from your ~/.bashrc
+export EDITOR="vim"
+
+export HISTCONTROL=ignoreboth
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
+# Less syntax highlight
+export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force --style neon"
+export LESS=" -R"
+
+# GO setup
+#export GOPATH="$HOME/go"
+#export PATH="$PATH:$GOPATH/bin:$HOME/bin"
+
+# Ruby (via Homebrew)
+#export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# JAVA (OpenJDK)
+# Can get via `java -XshowSettings:properties -version`
+#export  JAVA_HOME=/usr/lib64/openjdk-8/jre
+
+# Multipass alias support
+PATH="$PATH:/Users/bud/Library/Application Support/multipass/bin"
+
+# Colorful
+alias ls='ls -G'
+
+# Open file using VIM in a new tab (replace gvim with mvim on OSX)
+alias mvi='mvim --servername VIM --remote-tab-silent'
+
+# Best cmdline task mgr [ii.do](https://github.com/geekaholic/ii.do)
+alias t='~/bin/ii.do'
+alias bookmarks='~/bin/ii.do -f ~/bookmarks.markdown'
+
+# wipeout history
+alias wipeout='history -c && history -w'
+
+# Docker aliases
+# Remove dangling images
+alias docker-clean-images='docker image prune'
+alias docker-clean-containers='docker rm $(docker ps -a -f status=exited -q)'
+
+# K8s
+alias k=kubectl
+
+# Homebrew via Rosetta 2
+#alias brew='arch -x86_64 brew'
+
+#source ~/.git-prompt.sh
+
+# git integration with prompt
+#autoload -Uz vcs_info
+#precmd_vcs_info() { vcs_info }
+#precmd_functions+=( precmd_vcs_info )
+#setopt prompt_subst
+#RPROMPT=\$vcs_info_msg_0_
+#zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
+#zstyle ':vcs_info:*' enable git
+
+# Add some color with powerline
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$@\a\]"
+  PS1=${ORIG}${TITLE}
+}
+
