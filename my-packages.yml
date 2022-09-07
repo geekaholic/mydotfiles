@@ -5,15 +5,13 @@ packages:
   - brew:
     - shell: [ "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"" ]
   - bash-completion
+  - zsh
   - highlight
   - jq
   - yamllint
   - screenfetch
   - tmux
   - curl
-  - docker:
-    - alias: { Debian: "docker.io", Ubuntu: "docker.io"}
-    - skip: [ "MacOSX" ]
   - docker-compose
   - kubectx:
     - only: [ "Ubuntu", "MacOSX" ]
@@ -32,17 +30,16 @@ packages:
     - alias: { Ubuntu: 'vim-gtk3' }
   - xclip:
     - skip: [ "MacOSX" ]
-  - tlp-rdw:
-    - skip: [ "MacOSX" ]
   - neovim-qt:
     - only: [ "Manjaro" ]
   - python-pip:
     - only: [ "Manjaro" ]
-  - powerline
-    - alias: { Ubuntu: "fonts-powerline", Fedora: "powerline-fonts" }
-  - powertop
   - pwgen
   - the_silver_searcher:
     - alias: { Debian: "silversearcher-ag", Ubuntu: "silversearcher-ag",  Solus: "silver-searcher"}
   - vim
   - tilix
+  - ohmyzsh:
+    - shell: [ "sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"" ]
+  - p10k:
+    - shell: [ "sh -c \"git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k\"" ]
