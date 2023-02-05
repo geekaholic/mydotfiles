@@ -13,6 +13,9 @@ packages:
   - tmux
   - curl
   - docker-compose
+  - uidmap
+  - podman
+  - podman-docker
   - kubectx:
     - only: [ "Ubuntu", "MacOSX" ]
   - git
