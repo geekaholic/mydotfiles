@@ -7,6 +7,10 @@ packages:
   - bash-completion
   - zsh
   - highlight
+  - rich:
+    - only: ["MacOSX"]
+  - glow:
+    - only: ["MacOSX"]
   - jq
   - yamllint
   - screenfetch
