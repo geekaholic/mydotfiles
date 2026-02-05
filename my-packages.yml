@@ -24,6 +24,8 @@ packages:
     - only: [ "Ubuntu", "MacOSX" ]
   - git
   - htop
+  - apt-file:
+    - only: ["Ubuntu"]
   - tree:
     - skip: [ "Linux" ]
   - macvim:
